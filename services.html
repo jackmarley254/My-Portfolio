@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Services</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <title>Services - Jackson Gitahi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
@@ -14,28 +16,51 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="container">
-            <section>
-                <h1>My Services</h1>
-                <h2>Web Development</h2>
-                <p>I offer custom website development using HTML, CSS, and responsive design techniques.</p>
-                <h2>UI/UX Design</h2>
-                <p>Creating intuitive user interfaces and experiences to enhance usability.</p>
-                <h2>Consulting</h2>
-                <p>Providing advice on web technologies and best practices.</p>
-                <a href="contact.html" class="btn">Get a Quote</a>
-            </section>
+            <h2>Services I Offer</h2>
+            <div class="card-container">
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>IT Support & Consulting</h3>
+                        <p>Providing expert IT support, network troubleshooting (including MikroTik and Tenda routers), and technology consulting to keep your business operations running smoothly.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Backend Development</h3>
+                        <p>Building scalable and efficient backend systems using modern technologies like Python, FastAPI, and Celery, connected to robust databases like Postgres and MongoDB.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Custom Software Solutions</h3>
+                        <p>Developing custom applications tailored to your specific business needs, from internal tools to client-facing platforms like hospital management systems.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </main>
+
     <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>&copy; 2025 Jackson Gitahi. All rights reserved.</p>
     </footer>
+
 </body>
 </html>

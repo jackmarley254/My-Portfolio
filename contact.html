@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Contact</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <title>Contact Me - Jackson Gitahi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
@@ -16,30 +18,41 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="container">
-            <section>
-                <h1>Contact Me</h1>
-                <p>Feel free to reach out for collaborations or inquiries!</p>
-                <form action="#" method="post"> <!-- Note: No backend; form won't submit -->
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-                <p>Email: example@email.com | Phone: (123) 456-7890</p>
-            </section>
+            <h2>Get In Touch</h2>
+            <p style="text-align: center; max-width: 600px; margin: auto; margin-bottom: 2rem;">
+                I'm currently seeking new opportunities and am open to freelance projects. Feel free to reach out with any questions or collaboration ideas.
+            </p>
+
+            <form class="contact-form" action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" placeholder="Enter your message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </main>
+
     <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>&copy; 2025 Jackson Gitahi. All rights reserved.</p>
     </footer>
+
 </body>
 </html>

@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Skills</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <title>My Skills - Jackson Gitahi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="resume.html">Resume</a></li>
@@ -20,28 +22,61 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="container">
-            <section>
-                <h1>My Skills</h1>
-                <h2>Technical Skills</h2>
-                <ul>
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Responsive Design</li>
-                    <li>Version Control (Git)</li>
-                </ul>
-                <h2>Soft Skills</h2>
-                <ul>
-                    <li>Problem-Solving</li>
-                    <li>Team Collaboration</li>
-                    <li>Communication</li>
-                </ul>
-            </section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>FastAPI (Asynchronous Frameworks)</li>
+                        <li>Celery</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases & Data</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Infrastructure & DevOps</h3>
+                    <ul>
+                        <li>Event-Driven Microservices</li>
+                        <li>RabbitMQ</li>
+                        <li>Cybersecurity Principles</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>IT Support & Networking</h3>
+                    <ul>
+                        <li>Network Troubleshooting (MikroTik, Tenda)</li>
+                        <li>System Administration</li>
+                        <li>Hardware Maintenance</li>
+                        <li>User Support</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </main>
+
     <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>&copy; 2025 Jackson Gitahi. All rights reserved.</p>
     </footer>
+
 </body>
 </html>

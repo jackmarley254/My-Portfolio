@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Resume</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <title>My Resume - Jackson Gitahi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
@@ -15,29 +17,60 @@
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="container">
-            <section>
-                <h1>My Resume</h1>
-                <h2>Experience</h2>
-                <p><strong>Web Developer</strong> at XYZ Company (2020-Present)<br>Developed responsive websites and collaborated on UI/UX projects.</p>
-                <h2>Education</h2>
-                <p>Bachelor's in Computer Science, University of Example (2016-2020)</p>
-                <h2>Certifications</h2>
+            <h2>My Resume</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">
+                <a href="your-cv.pdf" class="cta-button" target="_blank">Download Full CV</a>
+            </p>
+
+            <div class="resume-section">
+                <h3>Summary</h3>
+                <p>ICT professional with 2 years of experience in IT support and backend development. Proven ability to manage network infrastructure and build custom software solutions. A detail-oriented problem-solver with a degree in Computer and Electronic Systems.</p>
+            </div>
+
+            <div class="resume-section">
+                <h3>Professional Experience</h3>
+                
+                <p class="job-title">IT Technician</p>
+                <p class="job-details">Real Estate Contractor, Nairobi | (Approx. 2024 - Present)</p>
                 <ul>
-                    <li>Certified HTML/CSS Developer</li>
-                    <li>IT Support Specialist</li>
+                    <li>Manage and troubleshoot office network infrastructure (MikroTik routers) for 50+ devices.</li>
+                    <li>Provide daily IT support to all staff, resolving hardware and software issues.</li>
+                    <li>Implement security policies, including managing router access controls.</li>
                 </ul>
-            </section>
+
+                <p class="job-title">PSC Intern</p>
+                <p class="job-details">Kisii University | (Approx. 2023 - 2024)</p>
+                <ul>
+                    <li>Assisted the university's IT department with user support and system maintenance.</li>
+                    <li>Participated in network upgrades and software rollouts.</li>
+                    <li>Gained hands-on experience in a large-scale IT environment.</li>
+                </ul>
+            </div>
+
+            <div class="resume-section">
+                <h3>Education</h3>
+                <p class="job-title">Bachelor of Technology in Computer and Electronic Systems</p>
+                <p class="job-details">Graduated: December 2021</p>
+            </div>
         </div>
     </main>
+
     <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <p>&copy; 2025 Jackson Gitahi. All rights reserved.</p>
     </footer>
+
 </body>
-</html> 
+</html>
