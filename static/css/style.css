@@ -1,147 +1,254 @@
-/* Reset and base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* --- Global Styles --- */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Dark background */
+    color: #eee; /* Light text */
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
 }
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
     padding: 20px;
 }
 
-/* Header and Navigation */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-}
-nav ul {
-    list-style: none;
-    text-align: center;
-}
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-nav ul li a:hover {
-    color: #ff6b6b;
+h1, h2, h3 {
+    color: #fff; /* White headings */
 }
 
-/* Main content */
-main {
-    margin-top: 80px; /* Account for fixed header */
-    padding: 20px 0;
-}
-section {
-    margin-bottom: 40px;
-}
-h1, h2 {
-    color: #333;
-}
-h1 {
-    text-align: center;
+h2 {
+    border-bottom: 2px solid #ff4a4a; /* Red accent line */
+    padding-bottom: 10px;
     margin-bottom: 20px;
 }
-h2 {
+
+a {
+    color: #ff4a4a; /* Red accent for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #333; /* Dark grey nav bg */
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #444;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* White nav links */
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+/* Style for the 'active' page link */
+nav ul li a.active,
+nav ul li a:hover {
+    color: #ff4a4a; /* Red for active/hover */
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 40px;
+    background-color: #333;
+    border-top: 1px solid #444;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff4a4a; /* Red hover for social icons */
+}
+
+/* --- Page: Home (Hero Section) --- */
+.hero {
+    text-align: center;
+    padding: 6rem 1rem;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #ff4a4a;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e03a3a;
+    color: #fff;
+}
+
+/* --- Page: Skills --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-category {
+    background-color: #333;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #ff4a4a;
+}
+
+.skill-category h3 {
+    margin-top: 0;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    background-color: #444;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+/* --- Page: Projects & Services (Cards) --- */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    color: #ff4a4a;
+}
+
+/* --- Page: Resume --- */
+.resume-section {
+    background-color: #333;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.resume-section h3 {
+    color: #ff4a4a;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.job-details {
+    font-style: italic;
+    color: #ccc;
     margin-bottom: 10px;
 }
-p {
-    margin-bottom: 15px;
-}
 
-/* Buttons and links */
-.btn {
-    display: inline-block;
-    background-color: #ff6b6b;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-.btn:hover {
-    background-color: #e55b5b;
-}
-
-/* Images */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-img:hover {
-    transform: scale(1.05);
-}
-
-/* Lists */
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-/* Forms */
-form {
+/* --- Page: Contact --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
 }
-label {
-    display: block;
+
+.contact-form label {
     margin-bottom: 5px;
+    font-weight: bold;
 }
-input, textarea {
-    width: 100%;
-    padding: 10px;
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1rem;
 }
-button {
-    background-color: #ff6b6b;
+
+.contact-form button {
+    background-color: #ff4a4a;
     color: #fff;
-    padding: 10px 20px;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-button:hover {
-    background-color: #e55b5b;
+    transition: background-color 0.3s ease;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-    .container {
-        padding: 10px;
-    }
+.contact-form button:hover {
+    background-color: #e03a3a;
 }
