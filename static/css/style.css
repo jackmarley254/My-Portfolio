@@ -252,3 +252,12 @@ footer {
 .contact-form button:hover {
     background-color: #e03a3a;
 }
+.profile-image {
+    width: 200px; 
+    height: 200px; /* Must match width for perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+    border: 5px solid #ff4a4a; /* Red circular border, matching your accent color */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Optional: adds a subtle shadow */
+    margin-bottom: 20px; /* Adds some space below the image */
+}
