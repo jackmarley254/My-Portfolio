@@ -261,3 +261,60 @@ footer {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Optional: adds a subtle shadow */
     margin-bottom: 20px; /* Adds some space below the image */
 }
+/* --- Responsive Styles (for Mobile) --- */
+/* This will apply to any screen 768px wide or smaller */
+
+@media (max-width: 768px) {
+
+    /* --- General --- */
+    h1 {
+        font-size: 2.2rem; /* Make main headings smaller */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        width: 95%; /* Use more of the screen */
+        padding: 10px;
+    }
+
+    /* --- Navigation --- */
+    nav ul {
+        flex-direction: column; /* Stack the nav links vertically */
+        align-items: center; /* Center them */
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 8px 0; /* Add space between the stacked links */
+    }
+
+    /* --- Home Page: Hero Section --- */
+    .hero {
+        padding: 2.5rem 1rem; /* Reduce top/bottom padding */
+    }
+
+    .profile-image {
+        width: 150px; /* Make profile image smaller */
+        height: 150px;
+        border-width: 3px; /* Make border thinner */
+    }
+
+    .hero .subtitle {
+        font-size: 1.1rem; /* Make subtitle smaller */
+    }
+
+    /* --- Grids (Cards & Skills) --- */
+    /* The grids will automatically stack to 1-column */
+    /* We just adjust the min-width for very small screens */
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
