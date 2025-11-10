@@ -49,14 +49,14 @@ To get this site running for your own use, follow these steps:
 
 2.  **Add Your Content:**
     * **Profile Image:** Replace `static/images/myherosectionimage.jpg` with your own photo.
-    * **Resume:** Add your CV in PDF format to the `static/documents/` folder.
+    * **Resume:** Add your CV in PDF format to the `static/media/` folder.
     * **Update Resume Link:** In **`resume.html`**, find this line:
         ```html
         <a href="your-cv.pdf" class="cta-button" target="_blank">Download Full CV</a>
         ```
         And update the `href` to point to your new file:
         ```html
-        <a href="static/documents/jackson-gitahi-cv.pdf" class="cta-button" target="_blank">Download Full CV</a>
+        <a href="static/media/jackson-gitahi-cv.pdf" class="cta-button" target="_blank">Download Full CV</a>
         ```
 
 3.  **Activate the Contact Form:**
