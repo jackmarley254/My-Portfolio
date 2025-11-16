@@ -297,7 +297,7 @@ footer {
     nav ul {
         flex-direction: column; /* Stack the nav links vertically */
         align-items: center; /* Center them */
-        width: 50%;
+        width: 30%;
     }
 
     nav ul li {
