@@ -281,79 +281,53 @@ footer {
 
     /* --- General --- */
     h1 {
-        font-size: 2.2rem;
+        font-size: 2.2rem; /* Make main headings smaller */
     }
+
     h2 {
         font-size: 1.8rem;
     }
+
     .container {
-        width: 95%;
+        width: 95%; /* Use more of the screen */
         padding: 10px;
     }
 
-    /* --- NEW Header & Toggler --- */
-    header {
-        /* On mobile, move content to the edges */
-        justify-content: flex-end; /* Pushes toggler to the right */
-    }
-
-    #menu-toggler {
-        display: block; /* Show the toggler button */
-    }
-
-    /* --- NEW Navigation Menu (Mobile) --- */
+    /* --- Navigation --- */
     nav ul {
-        /* Hide the menu by default */
-        display: none; 
-        
-        /* Style it as a full-screen overlay */
-        position: fixed; /* Take over the screen */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh; /* Full viewport height */
-        background-color: rgba(34, 34, 34, 0.98); /* Dark, slightly see-through */
-        
-        /* Center the links vertically and horizontally */
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-        /* Reset padding/margin from desktop */
-        padding: 0; 
-        margin: 0;
-    }
-
-    nav ul.active {
-        /* This class is toggled by JS to show the menu */
-        display: flex; 
+        flex-direction: column; /* Stack the nav links vertically */
+        align-items: center; /* Center them */
+        width: 50%;
     }
 
     nav ul li {
-        margin: 1.5rem 0; /* Space out the stacked links */
-    }
-
-    nav ul li a {
-        font-size: 1.5rem; /* Make links bigger for tapping */
+        margin: 8px 0; /* Add space between the stacked links */
     }
 
     /* --- Home Page: Hero Section --- */
     .hero {
-        padding: 2.5rem 1rem;
+        padding: 2.5rem 1rem; /* Reduce top/bottom padding */
     }
+
     .profile-image {
-        width: 150px;
+        width: 150px; /* Make profile image smaller */
         height: 150px;
-        border-width: 3px;
+        border-width: 3px; /* Make border thinner */
     }
+
     .hero .subtitle {
-        font-size: 1.1rem;
+        font-size: 1.1rem; /* Make subtitle smaller */
     }
 
     /* --- Grids (Cards & Skills) --- */
-    .skills-grid,
+    /* The grids will automatically stack to 1-column */
+    /* We just adjust the min-width for very small screens */
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
     .card-container {
-        /* This was already responsive, but we can simplify */
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
