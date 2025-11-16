@@ -67,7 +67,20 @@ nav ul li a {
     font-size: 1.1rem;
     padding: 5px 0;
 }
+/* --- New Menu Toggler Button --- */
+#menu-toggler {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 102; /* Ensures it's above the menu */
+}
 
+#menu-toggler:hover {
+    color: #ff4a4a;
+}
 /* Style for the 'active' page link */
 nav ul li a.active,
 nav ul li a:hover {
